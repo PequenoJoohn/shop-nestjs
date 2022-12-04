@@ -5,6 +5,7 @@ import {
   IsNotEmpty,
   IsNumber,
   IsPositive,
+  IsUUID,
   MaxLength,
   ValidateNested,
 } from 'class-validator';
@@ -12,6 +13,9 @@ import { caracteristicaProdutoDTO } from './caracteristicaProduto.dto';
 import { ImagensProdutoDTO } from './imagensProduto.dto';
 
 export class CriaProdutoDTO {
+  @IsUUID(undefined, { message: 'ID de usuário inválido' })
+  usuarioId: string;
+
   @IsNotEmpty()
   nome: string;
 
