@@ -9,8 +9,8 @@ import {
   MaxLength,
   ValidateNested,
 } from 'class-validator';
-import { caracteristicaProdutoDTO } from './caracteristicaProduto.dto';
-import { ImagensProdutoDTO } from './imagensProduto.dto';
+import { caracteristicaProdutoDTO } from './CaracteristicaProduto.dto';
+import { ImagensProdutoDTO } from './ImagensProduto.dto';
 
 export class CriaProdutoDTO {
   @IsUUID(undefined, { message: 'ID de usuário inválido' })

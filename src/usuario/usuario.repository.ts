@@ -35,9 +35,7 @@ export class UsuarioRepository {
   }
 
   async atualiza(id: string, dadosDeAtualizacao: Partial<UsuarioEntity>) {
-    const usuario = this.buscaPorId(id)
-
-
+    const usuario = this.buscaPorId(id);
 
     Object.entries(dadosDeAtualizacao).forEach(([chave, valor]) => {
       if (chave === 'id') {
