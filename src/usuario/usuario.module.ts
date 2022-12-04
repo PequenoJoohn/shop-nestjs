@@ -6,4 +6,4 @@ import { UsuarioRepository } from './usuario.repository';
   controllers: [UsuarioController],
   providers: [UsuarioRepository],
 })
-export class UsuarioModule {}
+export class UsuarioModule { }

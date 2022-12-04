@@ -6,4 +6,4 @@ import { ProdutoRepository } from './produto.repository';
   controllers: [ProdutoController],
   providers: [ProdutoRepository],
 })
-export class ProdutoModule {}
+export class ProdutoModule { }

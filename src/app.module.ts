@@ -7,4 +7,4 @@ import { UsuarioModule } from './usuario/usuario.module';
   controllers: [],
   providers: [],
 })
-export class AppModule {}
+export class AppModule { }
